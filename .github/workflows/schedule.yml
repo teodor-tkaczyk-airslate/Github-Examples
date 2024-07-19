@@ -1,0 +1,12 @@
+name: Every 10 Minutes
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print "Running daily regression"
+        run: echo "Running daily regression"
